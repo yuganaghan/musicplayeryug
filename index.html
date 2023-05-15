@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yug Works</title>
+</head>
+<body>
+    <div class="backgroundimg"></div>
+    <div class="mainweb">
+        <!-- ////////////////////////////////////////////////////////NAVIGATION CONTORLLS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <nav class="navbar">
+            <ul>
+                <li class="brand" style="font-size: 25px;"id="name"><img src="music-solid.svg" alt="Music">Music</li>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav>
+
+        <!-- //////////////////////////////////////////////////////// SONG CONTROLL \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+        <div class="songlist">
+            <div class="songs" id="musicitem">
+            </div>
+        </div>
+
+
+        <!-- ////////////////////////////////////////////////////BOTOM CONTROLES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+        <div class="botombar">
+            <div id="lastline">
+                <span class="tstemp"id="current">00:00</span>
+                <input type="range", min ="0" max="10000" class="timeline" value="0" id="input">
+                <span class="tstemp"id="total">00:00</span>
+            </div>
+            <div class="controller">
+                <div class="controlls">
+                    <img src="backward-step-solid.svg" alt=""  class="icon "id = "backword">
+                    <img src="play-solid.svg" alt=""class="icon play" id="mainPlay" >
+                    <img src="forward-step-solid.svg" alt="" class="icon" id="forward">
+                </div>
+                <div class="music">
+                    <img src="playing.gif" alt="" id="player">
+                    <span id="mainname"></span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="shuffle-solid.svg" class="shaffel"id="shuffel">
+            <img src="circle-play-solid.svg" alt="" class="cplay"id="cplay">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
